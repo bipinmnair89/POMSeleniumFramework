@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="8" name="Failed suite [HubSpot app test suite]">
+  <listeners>
+    <listener class-name="com.test.hubspot.listeners.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" verbose="8" name="Regression Testing(failed)">
+    <classes>
+      <class name="com.test.hubspot.tests.LoginPageTest">
+        <methods>
+          <include name="loginPageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="initialSetup"/>
+        </methods>
+      </class> <!-- com.test.hubspot.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Regression Testing(failed) -->
+</suite> <!-- Failed suite [HubSpot app test suite] -->

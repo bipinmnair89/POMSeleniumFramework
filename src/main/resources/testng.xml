@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="HubSpot app test suite" verbose="8">
+<listeners>
+	<listener class-name="com.test.hubspot.listeners.ExtentReportListener"/>
+</listeners>
+  <test name="Regression Testing">
+    <classes>
+      <class name="com.test.hubspot.tests.LoginPageTest"></class>
+      <class name="com.test.hubspot.tests.HomePageTest"></class>
+      <class name="com.test.hubspot.tests.ContactsPageTest"></class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
