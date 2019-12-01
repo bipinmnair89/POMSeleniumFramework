@@ -39,6 +39,7 @@ public class HomePage extends BaseConfiguration{
 	{		
 		util.explicitWaitTillByElementClickable(contactsdropdownLink);
 		driver.findElement(contactsdropdownLink).click();
+		
 	}
 	
 	public boolean validateContactsOptionIsDisplayed()
